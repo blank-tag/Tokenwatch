@@ -6,7 +6,7 @@
 
 **Track, alert, and control your LLM API spending — across OpenAI, Anthropic & Gemini**
 
-[![PyPI version](https://img.shields.io/pypi/v/neurify-tokenwatch.svg)](https://pypi.org/project/neurify-tokenwatch/)
+[![PyPI version](https://img.shields.io/pypi/v/neurify-tokenwatch.svg)](https://pypi.org/project/neurify-tokenwatch/0.1.0/)
 [![Python](https://img.shields.io/pypi/pyversions/neurify-tokenwatch.svg)](https://pypi.org/project/neurify-tokenwatch/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/neurify/tokenwatch.svg)](https://github.com/neurify/tokenwatch/stargazers)

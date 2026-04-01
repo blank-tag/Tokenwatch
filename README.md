@@ -2,7 +2,7 @@
 
 # 🔭 TokenWatch
 
-### by [Neurify](https://github.com/neurify)
+### by [Neurify](https://github.com/Neurify-PVT-LTD)
 
 **Track, alert, and control your LLM API spending — across OpenAI, Anthropic & Gemini**
 

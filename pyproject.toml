@@ -43,9 +43,9 @@ dev = [
 tokenwatch = "tokenwatch.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/neurify/tokenwatch"
-Repository = "https://github.com/neurify/tokenwatch"
-Issues = "https://github.com/neurify/tokenwatch/issues"
+Homepage = "https://github.com/blank-tag/Tokenwatch"
+Repository = "https://github.com/blank-tag/Tokenwatch"
+Issues = "https://github.com/blank-tag/Tokenwatch/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["tokenwatch"]

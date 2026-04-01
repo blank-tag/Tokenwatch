@@ -1,0 +1,91 @@
+# TokenWatch
+.env
+*.db
+~/.tokenwatch/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg
+
+# Virtual environments
+ENV/
+.env.local
+.env.*.local
+
+# Distribution / packaging
+pip-wheel-metadata/
+share/python-wheels/
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Type checking
+.dmypy.json
+dmypy.json
+.pytype/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+logs/
+
+# Secrets and credentials
+.env.*
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Build artifacts
+*.whl
+*.tar.gz
+*.sqlite
+*.sqlite3
+
+# Hatch
+.hatch/

@@ -8,8 +8,11 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/neurify-tokenwatch.svg)](https://pypi.org/project/neurify-tokenwatch/0.1.0/)
 [![Python](https://img.shields.io/pypi/pyversions/neurify-tokenwatch.svg)](https://pypi.org/project/neurify-tokenwatch/)
+[![Downloads](https://img.shields.io/pypi/dm/neurify-tokenwatch.svg?color=green)](https://pypi.org/project/neurify-tokenwatch/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/neurify/tokenwatch.svg)](https://github.com/neurify/tokenwatch/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/blank-tag/Tokenwatch.svg?style=social)](https://github.com/blank-tag/Tokenwatch/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/blank-tag/Tokenwatch.svg)](https://github.com/blank-tag/Tokenwatch/issues)
+[![GitHub forks](https://img.shields.io/github/forks/blank-tag/Tokenwatch.svg?style=social)](https://github.com/blank-tag/Tokenwatch/network/members)
 
 **TokenWatch** is Neurify's first open-source tool — a lightweight Python package that wraps your existing LLM clients transparently, tracks every token consumed, calculates real-time costs, enforces budget limits, and fires alerts before you overspend.
 
@@ -247,5 +250,5 @@ MIT License — see [LICENSE](LICENSE) for details.
 ---
 
 <div align="center">
-Made with ❤️ by <a href="https://github.com/neurify">Neurify</a> — Our first open-source release 🎉
+Made with ❤️ by <a href="https://github.com/blank-tag">Neurify</a> — Our first open-source release 🎉
 </div>

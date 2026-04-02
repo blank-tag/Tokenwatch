@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "neurify-tokenwatch"
-version = "0.1.0"
+version = "0.1.1"
 description = "TokenWatch by Neurify — Track, alert, and control your LLM API spending across OpenAI, Anthropic, and Gemini"
 readme = "README.md"
 license = {text = "MIT"}
@@ -25,14 +25,15 @@ requires-python = ">=3.9"
 dependencies = [
     "click>=8.0",
     "rich>=13.0",
-    "httpx>=0.24",
+    "httpx>=0.28",
 ]
 
 [project.optional-dependencies]
 openai = ["openai>=1.0"]
-anthropic = ["anthropic>=0.20"]
-gemini = ["google-generativeai>=0.5"]
-all = ["openai>=1.0", "anthropic>=0.20", "google-generativeai>=0.5"]
+anthropic = ["anthropic>=0.85"]
+gemini = ["google-genai>=1.0"]
+gemini-legacy = ["google-generativeai>=0.8"]
+all = ["openai>=1.0", "anthropic>=0.85", "google-genai>=1.0"]
 dev = [
     "pytest>=7.0",
     "pytest-asyncio>=0.21",
@@ -43,9 +44,9 @@ dev = [
 tokenwatch = "tokenwatch.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/neurify/tokenwatch"
-Repository = "https://github.com/neurify/tokenwatch"
-Issues = "https://github.com/neurify/tokenwatch/issues"
+Homepage = "https://github.com/blank-tag/Tokenwatch"
+Repository = "https://github.com/blank-tag/Tokenwatch"
+Issues = "https://github.com/blank-tag/Tokenwatch/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["tokenwatch"]

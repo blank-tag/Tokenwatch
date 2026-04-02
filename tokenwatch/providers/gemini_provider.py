@@ -72,14 +72,15 @@ class GeminiProvider(BaseProvider):
         The original object is modified in-place and returned.
         """
         try:
-            import google.generativeai  # noqa: F401
+            import google.genai  # noqa: F401 — new SDK (preferred)
         except ImportError:
             try:
-                import google.genai  # noqa: F401
+                import google.generativeai  # noqa: F401 — legacy SDK fallback
             except ImportError as exc:
                 raise ImportError(
-                    "google-generativeai package is required. "
-                    "Install it with: pip install google-generativeai"
+                    "A Gemini SDK is required. Install with:\n"
+                    "  pip install google-genai          (recommended, new SDK)\n"
+                    "  pip install google-generativeai   (legacy, deprecated)"
                 ) from exc
 
         provider = self

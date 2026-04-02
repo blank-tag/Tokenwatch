@@ -104,6 +104,29 @@ class CostTracker:
         from .providers.gemini_provider import GeminiProvider
         return GeminiProvider(self).wrap(client_or_model)
 
+    def wrap_groq(self, client: Any) -> Any:
+        """
+        Wrap a Groq client with cost tracking.
+
+        Returns the same client with ``chat.completions.create`` intercepted.
+        Supports both groq.Groq (sync) and groq.AsyncGroq (async).
+
+        Example::
+
+            import groq
+            from tokenwatch import CostTracker
+
+            tracker = CostTracker()
+            client  = tracker.wrap_groq(groq.Groq(api_key="gsk_..."))
+            response = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=[{"role": "user", "content": "Hello!"}],
+            )
+            print(f"Cost: ${tracker.get_session_cost():.6f}")
+        """
+        from .providers.groq_provider import GroqProvider
+        return GroqProvider(self).wrap(client)
+
     # ------------------------------------------------------------------
     # Decorator
     # ------------------------------------------------------------------

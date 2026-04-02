@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "neurify-tokenwatch"
-version = "0.1.1"
+version = "0.1.2"
 description = "TokenWatch by Neurify — Track, alert, and control your LLM API spending across OpenAI, Anthropic, and Gemini"
 readme = "README.md"
 license = {text = "MIT"}
@@ -33,7 +33,8 @@ openai = ["openai>=1.0"]
 anthropic = ["anthropic>=0.85"]
 gemini = ["google-genai>=1.0"]
 gemini-legacy = ["google-generativeai>=0.8"]
-all = ["openai>=1.0", "anthropic>=0.85", "google-genai>=1.0"]
+groq = ["groq>=1.0"]
+all = ["openai>=1.0", "anthropic>=0.85", "google-genai>=1.0", "groq>=1.0"]
 dev = [
     "pytest>=7.0",
     "pytest-asyncio>=0.21",

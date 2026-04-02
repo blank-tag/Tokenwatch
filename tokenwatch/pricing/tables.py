@@ -1,7 +1,7 @@
 """
 Pricing tables for LLM providers.
 Prices are in USD per 1,000,000 tokens (input/output).
-Last updated: early 2025.
+Last updated: April 2025.
 """
 
 from __future__ import annotations
@@ -28,6 +28,28 @@ PRICING: Dict[str, Dict[str, Tuple[float, float]]] = {
         "gemini-2.0-flash": (0.10, 0.40),
         "gemini-1.0-pro": (0.50, 1.50),
     },
+    "groq": {
+        # Groq pricing — per 1M tokens (April 2025)
+        # Llama models
+        "llama-3.3-70b-versatile": (0.59, 0.79),
+        "llama-3.1-8b-instant": (0.05, 0.08),
+        "llama3-70b-8192": (0.59, 0.79),
+        "llama3-8b-8192": (0.05, 0.08),
+        "meta-llama/llama-4-scout-17b-16e-instruct": (0.11, 0.34),
+        # Mixtral / Gemma
+        "mixtral-8x7b-32768": (0.24, 0.24),
+        "gemma2-9b-it": (0.20, 0.20),
+        "gemma-7b-it": (0.07, 0.07),
+        # Tool use & guard models
+        "llama-guard-3-8b": (0.20, 0.20),
+        "llama3-groq-70b-8192-tool-use-preview": (0.89, 0.89),
+        "llama3-groq-8b-8192-tool-use-preview": (0.19, 0.19),
+        # New models (April 2025)
+        "qwen/qwen3-32b": (0.29, 0.59),
+        "moonshotai/kimi-k2-instruct": (1.00, 3.00),
+        "openai/gpt-oss-120b": (0.50, 1.50),
+        "openai/gpt-oss-20b": (0.10, 0.30),
+    },
 }
 
 # Model aliases for common variations
@@ -49,6 +71,13 @@ MODEL_ALIASES: Dict[str, Tuple[str, str]] = {
     "gemini-1.5-pro-latest": ("gemini", "gemini-1.5-pro"),
     "gemini-1.5-flash-latest": ("gemini", "gemini-1.5-flash"),
     "gemini-2.0-flash-exp": ("gemini", "gemini-2.0-flash"),
+    # Groq
+    "llama3-70b": ("groq", "llama3-70b-8192"),
+    "llama3-8b": ("groq", "llama3-8b-8192"),
+    "llama-3.3-70b": ("groq", "llama-3.3-70b-versatile"),
+    "llama-3.1-8b": ("groq", "llama-3.1-8b-instant"),
+    "mixtral": ("groq", "mixtral-8x7b-32768"),
+    "gemma2": ("groq", "gemma2-9b-it"),
 }
 
 
